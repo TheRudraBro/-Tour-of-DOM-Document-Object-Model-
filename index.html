@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TourOfDom</title>
+    <style>
+        h1{
+            color: red;
+        }
+        #food-title{
+            color: green;
+        }
+        .food .foreign{
+            font-weight: 700;
+        }
+    </style>
+<link rel="stylesheet" href="styles/style.css"></link>
+</head>
+<body>
+    
+  <header>
+    <h1>This is my Header no banner</h1>
+  </header>  
+<main>
+    <section id="old-dhaka" class="songs">
+    <h1>Welcome To My DOM</h1>
+    <p>Lorem ipsum dolor sit <span>oli goli</span> amet consectetur adipisicing elit. Aspernatur, id.</p>
+    <h1>hai jjabonidh ud32b <span>Some text</span> hdiu hedfeuy</h1>
+    <ul>
+        <li>Shafayat</li>
+        <li>John</li>
+        <li>Jane</li>
+       
+    </ul>
+</section>
+
+    <section class="food">
+        <h1 id="food-title">Foods I Love</h1>
+<ul>
+    <li>Rice</li>
+    <li>Chicken</li>
+    <li>Fish</li>
+    <li>Vegetables</li>
+    <li class="foreign">Fruits</li>
+    <li class="foreign">Desserts</li>
+    <li class="foreign">Snacks</li>
+</ul>
+    </section>
+
+
+
+
+
+
+</main>
+
+
+
+
+<script>
+    // console.log("Hello from Javascript")
+    // console.log("Hello from Rudra")
+// console.log('Document Object Model');
+
+const students = {
+    name : 'Abul',
+    id:220,
+    study : function(){
+
+        // console.log('Studying')
+    }
+}
+
+const liCollection = document.getElementsByTagName('li');
+// console.log(liCollection);
+for(const li of liCollection)
+{
+    console.log(li.innerText)
+}
+
+// all h1 tags
+const h1Collection = document.getElementsByTagName('h1');
+// console.log(h1Collection);
+for(const h1 of h1Collection)
+{
+    // console.log(h1.innerText)
+}
+
+
+//get by id
+const foodTitle = document.getElementById('food-title');
+console.log(foodTitle);
+console.log(foodTitle.innerText);
+foodTitle.innerText = "I love pizza"
+
+
+// gets element by class name
+const foreignFoodItems = document.getElementsByClassName('foreign');
+console.log(foreignFoodItems);
+for(const item of foreignFoodItems)
+{
+    console.log(item.innerText);
+}
+
+
+// query selector
+const foodTitle = document.querySelector('#food-title');
+console.log(foodTitle);
+console.log(foodTitle.innerText);
+foodTitle.innerText = "I love pizza"
+
+
+// query selector all
+const selectormaal = document.querySelectorAll('.foreign');
+console.log(selectormaal);
+for(const item of selectormaal)
+{
+    console.log(item.innerText);
+}
+
+
+
+
+
+</script>
+<script src="js/hello.js"></script>
+</body>
+</html>
