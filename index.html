@@ -22,7 +22,7 @@
   <header>
     <h1>This is my Header no banner</h1>
   </header>  
-<main>
+<main id="main-container">
     <section id="old-dhaka" class="songs">
     <h1>Welcome To My DOM</h1>
     <p>Lorem ipsum dolor sit <span>oli goli</span> amet consectetur adipisicing elit. Aspernatur, id.</p>
@@ -49,7 +49,15 @@
     </section>
 
 
-
+<section id="players-container">
+    <h1>PLayers</h1>
+    <ul id="players-list">
+        <li>Messi</li>
+        <li>Ronaldo</li>
+        <li>Neymar</li>
+        <li>Pele</li>
+    </ul>
+</section>
 
 
 
@@ -76,7 +84,7 @@ const liCollection = document.getElementsByTagName('li');
 // console.log(liCollection);
 for(const li of liCollection)
 {
-    console.log(li.innerText)
+    // console.log(li.innerText)
 }
 
 // all h1 tags
@@ -90,43 +98,48 @@ for(const h1 of h1Collection)
 
 //get by id
 const foodTitle = document.getElementById('food-title');
-console.log(foodTitle);
-console.log(foodTitle.innerText);
+// console.log(foodTitle);
+// console.log(foodTitle.innerText);
 foodTitle.innerText = "I love pizza"
 
 
 // gets element by class name
 const foreignFoodItems = document.getElementsByClassName('foreign');
-console.log(foreignFoodItems);
+// console.log(foreignFoodItems);
 for(const item of foreignFoodItems)
 {
-    console.log(item.innerText);
+    // console.log(item.innerText);
 }
 
 
 // query selector
 const foodTitle = document.querySelector('#food-title');
-console.log(foodTitle);
-console.log(foodTitle.innerText);
+// console.log(foodTitle);
+// console.log(foodTitle.innerText);
 foodTitle.innerText = "I love pizza"
 
 
 // query selector all
 const selectormaal = document.querySelectorAll('.foreign');
-console.log(selectormaal);
+// console.log(selectormaal);
 for(const item of selectormaal)
 {
-    console.log(item.innerText);
+    // console.log(item.innerText);
 }
 
 
 // get attribute
 const foodTitle = document.querySelector('#food-title');
-console.log(foodTitle);
-console.log(foodTitle.getAttribute('id'));
+// console.log(foodTitle);
+// console.log(foodTitle.getAttribute('id'));
 foodTitle.setAttribute('id', 'new-id');
+
+
 
 </script>
 <script src="js/hello.js"></script>
+<script src="js/cssinjs.js"></script>
+<script src="js/child.js"></script>
+<script src="js/append.js"></script>
 </body>
 </html>
